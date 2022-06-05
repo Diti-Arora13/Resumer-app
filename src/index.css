@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .gradient{ background: linear-gradient(to right, theme('colors.blue'), theme('colors.pink')) }
+
+    .gradient-text{ 
+        background: linear-gradient(to right, theme('colors.blue'), theme('colors.pink'));
+        -webkit-background-clip: text; 
+        color: transparent; 
+    }
+
+    .blue-shadow { box-shadow: 6px 6px 0px theme('colors.blue'); }
+
+    .button { @apply blue-shadow py-1 px-5 font-medium border border-black hover:gradient hover:text-white }
+
+    .button:hover { box-shadow: none}
+
+    .pick { @apply h-96 cursor-pointer hover:opacity-60 border-2 border-black blue-shadow }
+}
