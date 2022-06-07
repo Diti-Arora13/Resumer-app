@@ -13,7 +13,7 @@ import TempThree from './components/layouts/TempThree'
 const App = () => {
   return (
     <Router>
-      <div className='bg-white min-h-screen px-10'>
+      <div className='bg-white min-h-screen relative px-10'>
         <Navbar />
  
         {/* ROUTES */}
@@ -27,7 +27,7 @@ const App = () => {
           <Route path='/template3' element={<TempThree />} />
         </Routes>
 
-        <p className='absolute bottom-0'>Made with ❤ by Diti</p>
+        <p className='absolute bottom-0 -mb-20'>Made with ❤ by Diti</p>
       </div>
     </Router>
   )
