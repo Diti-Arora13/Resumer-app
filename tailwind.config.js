@@ -15,7 +15,7 @@ module.exports = {
 
      extend: {
       colors: {
-        'blue': '#3FAEFF',
+        'blu': '#3FAEFF',
         'pink': '#FF2E9F',
         'white': '#FFFDFD',
       },

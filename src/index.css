@@ -5,15 +5,15 @@
 @tailwind utilities;
 
 @layer components {
-    .gradient{ background: linear-gradient(to right, theme('colors.blue'), theme('colors.pink')) }
+    .gradient{ background: linear-gradient(to right, theme('colors.blu'), theme('colors.pink')) }
 
     .gradient-text{ 
-        background: linear-gradient(to right, theme('colors.blue'), theme('colors.pink'));
+        background: linear-gradient(to right, theme('colors.blu'), theme('colors.pink'));
         -webkit-background-clip: text; 
         color: transparent; 
     }
 
-    .blue-shadow { box-shadow: 6px 6px 0px theme('colors.blue'); }
+    .blue-shadow { box-shadow: 6px 6px 0px theme('colors.blu'); }
 
     .button { @apply blue-shadow py-1 px-5 font-medium border border-black hover:gradient hover:text-white }
 
