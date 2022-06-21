@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom'
 import Pfp from "../../imgs/pfp.png";
+import Editing from "./Editing/Editing";
 //icons
 import { FaUser } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
@@ -14,10 +15,8 @@ const TempOne = () => {
   return (
     <>
       <button className='back-btn' onClick={() => navigate('/pick')} > <FiArrowLeft/> </button>
-      <div className="flex">
-          
-        {/* Styling component */}
-
+      <div className="flex gap-8">
+      
         {/* resume */}
         <div className="w-a4w h-a4h border-black border-2">
           <div className="gradient pl-5 pb-3 pt-10 border-b border-black text-white">
@@ -198,6 +197,9 @@ const TempOne = () => {
             </div>
           </div>
         </div>
+
+        {/* Styling component */}
+        <Editing />
       </div>
     </>
   );
