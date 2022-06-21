@@ -20,4 +20,6 @@
     .button:hover { box-shadow: none}
 
     .pick { @apply h-96 cursor-pointer hover:opacity-60 border-2 border-black blue-shadow }
+    
+    .back-btn { @apply mb-4 border-black border cursor-pointer hover:bg-black hover:bg-opacity-20 rounded-full p-2 box-content}
 }

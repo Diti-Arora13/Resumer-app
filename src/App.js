@@ -27,7 +27,7 @@ const App = () => {
           <Route path='/template3' element={<TempThree />} />
         </Routes>
 
-        <p className='absolute bottom-0 -mb-20'>Made with ❤ by Diti</p>
+        {/* <p className='absolute bottom-0 -mb-20'>Made with ❤ by Diti</p> */}
       </div>
     </Router>
   )
