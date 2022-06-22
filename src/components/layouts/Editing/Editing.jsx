@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Style from "./Style";
+import Detail from './Detail'
 
 const Editing = () => {
   const [activeTab, setActiveTab] = useState(false)
@@ -7,14 +9,13 @@ const Editing = () => {
 
   return (
     <div>
-      <div className="flex items-center mb-4">
+      <div className="flex items-center mb-6">
         <button onClick={toggle} className={`text-md py-2 px-16 ${!activeTab && `bg-black bg-opacity-10 border-b-2 border-blu`}`}>Style</button>
 
         <button onClick={toggle} className={`text-md py-2 px-16 ${activeTab && `bg-black bg-opacity-10 border-b-2 border-pink`}`}>Details</button>
       </div>
-
-      <p>Hello world</p>
       
+      <Style />
     </div>
   );
 };
