@@ -13,7 +13,7 @@ const Editing = () => {
         <button onClick={toggle} className={`text-md py-2 px-16 ${activeTab && `bg-black bg-opacity-10 border-b-2 border-pink`}`}>Details</button>
       </div>
 
-      
+      <p>Hello world</p>
       
     </div>
   );
